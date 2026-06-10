@@ -34,7 +34,7 @@ def get_max_item(inv: dict[str, int]) -> str:
 
 
 def get_min_item(inv: dict[str, int]) -> str:
-    """Return the key with the highest value."""
+    """Return the key with the lowest value."""
     min_item: str = list(inv.keys())[0]
     for item in inv.keys():
         if inv[item] < inv[min_item]:

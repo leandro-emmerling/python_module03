@@ -43,7 +43,7 @@ def main() -> None:
     ten_list: list[tuple[str, str]] = []
     for i in range(10):
         ten_list.append(next(event_gen))
-    print(f"Build list of 10 events: {ten_list}")
+    print(f"Built list of 10 events: {ten_list}")
     for event in consume_event(ten_list):
         print(f"Got event from list: {event}")
         print(f"Remains in list: {ten_list}")
